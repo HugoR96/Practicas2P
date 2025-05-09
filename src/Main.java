@@ -1,3 +1,4 @@
+import lcde.ListasCircularDoblementeEnlazada;
 import lcse.ListaCircularSimplementeEnlazada;
 import lse.ListaSimplenteEnlazada;
  public class Main {
@@ -28,21 +29,26 @@ import lse.ListaSimplenteEnlazada;
                    listaDoblementeEnlazada.MostrarAtras();
                    listaDoblementeEnlazada.MostrarAdelante();
                    */
-            ListaCircularSimplementeEnlazada listaCircularSimplementeEnlazada = new ListaCircularSimplementeEnlazada();
-            System.out.println(listaCircularSimplementeEnlazada.estaVacia());
-            System.out.println(listaCircularSimplementeEnlazada.tamaño());
-
-            for (int i = 1; i < 12 ; i++) {
-                listaCircularSimplementeEnlazada.insertarFin(i);
+//            ListaCircularSimplementeEnlazada listaCircularSimplementeEnlazada = new ListaCircularSimplementeEnlazada();
+//            System.out.println(listaCircularSimplementeEnlazada.estaVacia());
+//            System.out.println(listaCircularSimplementeEnlazada.tamaño());
+//
+//            for (int i = 1; i < 12 ; i++) {
+//                listaCircularSimplementeEnlazada.insertarFin(i);
+//            }
+//            listaCircularSimplementeEnlazada.mostrar();
+//            System.out.println(listaCircularSimplementeEnlazada.tamaño());
+//
+//            listaCircularSimplementeEnlazada.eliminarFin();
+//            listaCircularSimplementeEnlazada.eliminarFin();
+//
+//            listaCircularSimplementeEnlazada.mostrar();
+            ListasCircularDoblementeEnlazada listasCircularDoblementeEnlazada = new ListasCircularDoblementeEnlazada();
+            System.out.println(listasCircularDoblementeEnlazada.estaVacia());
+            for (int i = 1; i <=5 ; i++) {
+                listasCircularDoblementeEnlazada.insetarFinal(i);
             }
-            listaCircularSimplementeEnlazada.mostrar();
-            System.out.println(listaCircularSimplementeEnlazada.tamaño());
-
-            listaCircularSimplementeEnlazada.eliminarFin();
-            listaCircularSimplementeEnlazada.eliminarFin();
-
-            listaCircularSimplementeEnlazada.mostrar();
-
+            listasCircularDoblementeEnlazada.mostar();
         }
     }
 
