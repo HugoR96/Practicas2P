@@ -1,15 +1,48 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+import lcse.ListaCircularSimplementeEnlazada;
+import lse.ListaSimplenteEnlazada;
+ public class Main {
+        public static void main(String[] args){
+            /*ListaSimplenteEnlazada listaSimplenteEnlazada = new ListaSimplenteEnlazada();
+            listaSimplenteEnlazada.insertar(5);
+            listaSimplenteEnlazada.insertar(4);
+            listaSimplenteEnlazada.insertar(3);
+            listaSimplenteEnlazada.insertar(2);
+            listaSimplenteEnlazada.insertar(1);
+            listaSimplenteEnlazada.insertar(0);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+            listaSimplenteEnlazada.mostar();
+            listaSimplenteEnlazada.eliminar();
+            listaSimplenteEnlazada.eliminar();
+            listaSimplenteEnlazada.mostar();
+
+            ListaDoblementeEnlazada listaDoblementeEnlazada = new ListaDoblementeEnlazada();
+            System.out.println(listaDoblementeEnlazada.estaVacia());
+             for (int i = 20; i > 0 ; i--){
+                   listaDoblementeEnlazada.insertar(i);
+             }
+                   System.out.println(listaDoblementeEnlazada.estaVacia());for (int i = 1; i < 12 ; i++) {
+                   listaDoblementeEnlazada.MostrarAdelante();
+            }
+                   listaDoblementeEnlazada.eliminar();
+                   listaDoblementeEnlazada.eliminar();
+                   listaDoblementeEnlazada.MostrarAtras();
+                   listaDoblementeEnlazada.MostrarAdelante();
+                   */
+            ListaCircularSimplementeEnlazada listaCircularSimplementeEnlazada = new ListaCircularSimplementeEnlazada();
+            System.out.println(listaCircularSimplementeEnlazada.estaVacia());
+            System.out.println(listaCircularSimplementeEnlazada.tamaño());
+
+            for (int i = 1; i < 12 ; i++) {
+                listaCircularSimplementeEnlazada.insertarFin(i);
+            }
+            listaCircularSimplementeEnlazada.mostrar();
+            System.out.println(listaCircularSimplementeEnlazada.tamaño());
+
+            listaCircularSimplementeEnlazada.eliminarFin();
+            listaCircularSimplementeEnlazada.eliminarFin();
+
+            listaCircularSimplementeEnlazada.mostrar();
+
         }
     }
-}
+
