@@ -46,6 +46,7 @@ public class Main {
 //            listaCircularSimplementeEnlazada.eliminarFin();
 //
 //            listaCircularSimplementeEnlazada.mostrar();
+<<<<<<< HEAD
             /*ListasCircularDoblementeEnlazada listasCircularDoblementeEnlazada = new ListasCircularDoblementeEnlazada();
             System.out.println(listasCircularDoblementeEnlazada.estaVacia());
             for (int i = 1; i <= 5; i++) {
@@ -66,6 +67,14 @@ public class Main {
         System.out.println(pilas.estaVacia());
         for (int i = 1; i <= 5; i++) {
             pilas.insertar(i);
+=======
+            ListasCircularDoblementeEnlazada listasCircularDoblementeEnlazada = new ListasCircularDoblementeEnlazada();
+            System.out.println(listasCircularDoblementeEnlazada.estaVacia());
+            for (int i = 1; i <=5 ; i++) {
+                listasCircularDoblementeEnlazada.insetarFinal(i);
+            }
+            listasCircularDoblementeEnlazada.mostar();
+>>>>>>> 9f095115c2715289da7e82fa9f2db53cbd136db0
         }
         pilas.mostar();
         pilas.eliminar();
