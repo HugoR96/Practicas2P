@@ -1,22 +1,24 @@
 package lse;
 
 public class ListaSimplenteEnlazada {
-    static nodo primero;
+    protected Nodo primero;
 
     public ListaSimplenteEnlazada() {
+
         primero = null;
     }
 
-    public static boolean estaVacia() {
+    public boolean estaVacia() {
+
         return primero == null;
     }
 
     public void insertar(Object dato) {
         if (estaVacia()) {
-            nodo nuevo = new nodo(dato, null);
+            Nodo nuevo = new Nodo(dato, null);
             primero = nuevo;
         } else {
-            nodo nuevo = new nodo(dato, primero);
+            Nodo nuevo = new Nodo(dato, primero);
             primero = nuevo;
         }
 
@@ -29,7 +31,7 @@ public class ListaSimplenteEnlazada {
     }
 
     public void mostar() {
-        nodo tmp = primero;
+        Nodo tmp = primero;
         while (tmp != null) {
             System.out.print(tmp.getDato() + "  ");
 

@@ -1,12 +1,16 @@
-package lse;
+package lcde;
 
 public class nodo {
-    Object dato;
-    nodo siguiente;
+    private nodo anterior;
+    private Object dato;
+    private nodo siguiente;
 
-    public nodo(Object dato, nodo siguiente) {
-        this.dato = dato;
-        this.siguiente = siguiente;
+    public nodo getAnterior() {
+        return anterior;
+    }
+
+    public void setAnterior(nodo anterior) {
+        this.anterior = anterior;
     }
 
     public Object getDato() {
@@ -23,5 +27,9 @@ public class nodo {
 
     public void setSiguiente(nodo siguiente) {
         this.siguiente = siguiente;
+    }
+
+    public nodo(){
+
     }
 }
