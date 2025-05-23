@@ -5,5 +5,7 @@ public class Main {
         //System.out.println(Ejercicios.factorial(10));
 
         System.out.println(Ejercicios.mcd(412,184));
+
+
     }
 }
